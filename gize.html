@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>መመዝገቢያ ፎርም</title>
+  <style>
+    body {
+      font-family: italic, sans-serif;
+      background: #8399b9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      width: 500px;
+      background: #23d123;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: hwb(273 5% 9%);
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    textarea {
+      resize: none;
+      height: 90px;
+    }
+    button {
+      width: 100%;
+      padding: 7px;
+      background: #007bff;
+      color: rgb(63, 58, 58);
+      font-size: 16px;
+      border: circle;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #5a8875;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>ብሩህ ተስፋ የህጻናት እና የወላጆች መመዝገቢያ ፎርም</h2>
+    <form>
+      <label for="fullname">ሙሉ ስም</label>
+      <input type="text" id="ሙሉ ስም" name="ሙሉ ስም" required>
+
+      <label for="dob"> የትውልድ ቦታ</label>
+      <input type="ቀን" id="dob" name="dob" required>
+
+      <label for="gender">ጾታ</label>
+      <select id="gender" name="gender" required>
+        <option value="">-- ጾታ ምረጥ --</option>
+        <option value="male">ወንድ</option>
+        <option value="female">ሴት</option>
+      </select>
+
+      <label for="region">ክልል</label>
+      <input type="text" id="region" name="region" required>
+
+      <label for="zone">ዞን</label>
+      <input type="text" id="ዞን" name="zone" required>
+
+      <label for="woreda">ወረዳ</label>
+      <input type="text" id="ወረዳ" name="woreda" required>
+
+      <label for="kebele">ቀበሌ</label>
+      <input type="text" id="kebele" name="kebele" required>
+
+      <label for="address">መኖሪያ አድራሽ</label>
+      <textarea id="address" name="address" required></textarea>
+
+      <label for="phone">ስልክ ቁጥር</label>
+      <input type="number" id="phone" name="phone" pattern="[0-9]{10}" placeholder="+251" required>
+
+      <button type="submit">መመዝገብ</button>
+    </form>
+  </div>
+</body>
+</html>
